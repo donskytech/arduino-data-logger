@@ -1,6 +1,6 @@
 # arduino-data-logger
 
-This project will show you how to create a logger for your sensor data readings and save it in a database. It uses MongoDB NoSQL database for saving the sensor readings.
+This Python Flask project will show you how to create a logger for your sensor data readings and save it in a database. It uses MongoDB NoSQL database for holding the sensor readings.
 
 ##
 Write up soon at www.donskytech.com (Please wait)
