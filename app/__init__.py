@@ -54,6 +54,8 @@ def register_error_handlers(app):
     # 400 - Bad Request
     @app.errorhandler(400)
     def bad_request(e):
+        if API_PATH_PREFIX in request.path:
+            return jsonify({"error": True, "message": f"Invalid POST Request!"})
         return render_template('400.html'), 400
 
     # 403 - Forbidden
